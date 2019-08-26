@@ -12,12 +12,15 @@ body {
     
 }
 
+/* WILL WORK ON IT LATER */
 
 .nav-toggled {
     display:none;
     float:right;
     margin-right: 50px;
 }
+
+/* WILL WORK ON IT LATER */
 
 .navbar {
     display:block;
