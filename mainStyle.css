@@ -3,6 +3,7 @@ html {
     max-width: 100%;
     margin: 0;
     scroll-behavior: smooth; /*scrolling effect between sections*/
+    font-size:16px;
 }
 
 body {
@@ -25,8 +26,8 @@ body {
 .navbar {
     display:block;
     padding: 5px;
-    background-color: rgba(0,0,0,0.2);
-    border-bottom: 1px solid rgba(255, 196, 0, 0.623);
+    background-color: rgba(0, 0, 0, 1);
+    border-bottom: 1px solid rgba(180,0,0,1);
     position: fixed;
     width: 100%;
     margin-bottom: 50px;
@@ -66,7 +67,6 @@ body {
 }
 
 .navbar .nav-links ul li a:hover {
-    display: inline-block;
     color: rgba(255, 0, 0, 1);
     text-decoration: none;
 }
@@ -74,13 +74,13 @@ body {
 
 
 
+
 #mainSection {
-    padding: 50px;
+    padding: 30px;
     background: url(https://images.unsplash.com/photo-1497493292307-31c376b6e479?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80) no-repeat;
     background-size: cover;
     background-position: center;
     max-width:auto;
-    min-height: 700px;
 }
 
 .mainContainer {
@@ -90,7 +90,6 @@ body {
     padding: 10px;
     background-color: rgba(2, 2, 2, 0.2);
     border-radius: 5px;
-    min-height: 700px;
     margin: 20px 0;
 }
 
@@ -105,24 +104,34 @@ body {
 
 h1 {
     padding: 5px;
-    font-size: 4rem;
+    font-size: 3rem;
     color:white;
     font-weight: 400;
 }
 
-.mainContainer h2 {
+ h2 {
     padding: 5px;
-    font-size: 25px;
+    font-size: 1.5rem;
     color:white;
     font-weight: 200;
+    margin-top:25px;
+    margin-bottom:0;
+}
+
+h6 {
+    color:white;
+    font-weight: 100;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    margin-top:0;
 }
 
  p {
-    margin: 25px auto;
+    margin: 10px auto;
     display:flex;
     justify-content: center;
-    padding: 10px;
-    font-size: 20px;
+    padding: 5px;
+    font-size: 1.2rem;
     color:rgb(255, 255, 255);
     font-weight: 400;
     line-height: 1.3rem;
@@ -162,12 +171,11 @@ h1 {
 
 
 #aboutSection {
-    padding: 50px;
+    padding: 30px;
     background: url(https://images.unsplash.com/photo-1485211177140-aa3b17a0c7b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2001&q=80) no-repeat;
     background-size: cover;
     background-position: center;
     max-width:auto;
-    min-height:700px;
 }
 
 .aboutContainer {
@@ -175,9 +183,8 @@ h1 {
                  0px 8px 13px rgba(0,0,0,0.1);
     text-align: center;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(121, 121, 121, 0.2);
     border-radius: 5px;
-    min-height: 700px;
     margin:20px 0;
 }
 
@@ -185,38 +192,21 @@ h1 {
     color: white;
 }
 
-@media (max-width: 922px) {
-   .mainContainer h1 {
-       font-size: 3rem;
-   }
 
-   .mainContainer h2 {
-       font-size: 1.2rem;
-   }
 
-   .mainContainer p {
-       font-size: 1.2rem;
-   }
+@media (max-width:922px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2,h6,p {
+        font-size: 1rem;
+    }
+
 }
 
-@media (max-width: 622px) {
-   .mainContainer h1 {
-       font-size: 1.5rem;
-   }
 
-   .mainContainer h2 {
-       font-size: 0.6rem;
-   }
-
-     .mainContainer p {
-       font-size: 1rem;
-   }
-
-
-   .navbar .nav-links {
-       display: none;
-   }
-}
 
 
 
