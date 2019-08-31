@@ -157,6 +157,9 @@ body {
     display: none;
 }
 
+
+/*  MEDIA QUARIES */
+
 @media (max-width: 1050px) {
 
     .bio {
@@ -178,6 +181,35 @@ body {
 
 @media (max-width: 622px) {
 
+
+    .bio {
+        display: block;
+        text-align: center;
+    }
+
+    .bio .bio-tab {
+        max-width:100%;
+        height: 320px;
+        
+    }
+
+    #about h1 {
+        text-align: center;
+        
+    }
+
+    #about h1,hr {
+        display: none;
+    }
+
+}
+
+@media (max-width:550px) {
+
+    #navbar-right {
+        display: none;
+    }
+
     .bio {
         display: block;
         text-align: center;
@@ -190,6 +222,7 @@ body {
     }
 
     #about h1,hr {
+        display: none;
         text-align: center;
         
     }
