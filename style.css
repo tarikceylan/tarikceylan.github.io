@@ -13,7 +13,7 @@ h1 {
 
 /* NAVBAR STYLES */
 
-#navbar {
+.top-nav {
     display: flex;
     width: 100%;
     padding: 20px 0;
@@ -23,33 +23,37 @@ h1 {
     background: rgba(0, 0, 0, 0.3);
 }
 
-#nav-brand {
-    margin: 0 5px;
-}
-
-#navbar-left {
+.nav-header {
     display: inline-block;
     margin-right: auto;
     margin-left: 25px;
     color: white;
 }
 
-#navbar-right {
+.nav-links {
     display: inline-block;
     margin-right: 25px;
     margin-left: auto;
 }
 
-#navbar a {
+.nav-links .nav-icon {
+    color: white;
+    display: none;
+}
+
+.nav-links a {
     margin: 0 10px;
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
-    transition: all 0.5s;
+    transition: color 0.5s;
 }
 
-#navbar a:hover {
+
+.nav-links a:hover {
     color: rgb(187, 187, 187);
 }
+
+
 
 /* HOME */
 
@@ -106,11 +110,43 @@ h1 {
 
 /* MEDIA QUARIES */
 
-@media screen and (max-width: 460px) {
-    #navbar-right {
+
+/* TODOS */
+/* WILL WORK ON NAVBAR SIZE & POSITION ON SMALL DEVICES */
+
+@media screen and (max-width: 600px) {
+
+    .nav-header {
+        display: block;
+    }
+
+    .nav-links {
+        display: inline-block;
+    }
+
+    .nav-links a {
         display: none;
     }
+
+    .nav-links a.nav-icon {
+        display: inline-block;
+
+    }
+
+    .responsive {
+        display: block;
+    }
+
+    .responsive a {
+        display: block;
+        margin-top: 5px; 
+    }
+
+
+
+
 }
+
 
 
 
