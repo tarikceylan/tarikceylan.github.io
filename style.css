@@ -21,13 +21,14 @@ h1 {
     top: 0;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.3);
+    color: white;
 }
+
 
 .nav-header {
     display: inline-block;
     margin-right: auto;
     margin-left: 25px;
-    color: white;
 }
 
 .nav-links {
@@ -37,7 +38,6 @@ h1 {
 }
 
 .nav-links .nav-icon {
-    color: white;
     display: none;
 }
 
@@ -53,14 +53,12 @@ h1 {
     color: rgb(187, 187, 187);
 }
 
-
-
 /* HOME */
 
 #home {
     width: 100%;
     height: 100%;
-    background: #232323;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(35,35,35,1) 100%);
     padding-bottom: 200px;
 }
 
@@ -90,7 +88,7 @@ h1 {
 #about {
     width: 100%;
     height: 100%;
-    background:#919191;
+    background: linear-gradient(180deg, rgba(162,162,162,1) 0%, rgba(115,115,115,1) 100%);
 }
 
 #about-content {
@@ -110,14 +108,14 @@ h1 {
 
 /* MEDIA QUARIES */
 
-
-/* TODOS */
-/* WILL WORK ON NAVBAR SIZE & POSITION ON SMALL DEVICES */
-
 @media screen and (max-width: 600px) {
 
     .nav-header {
         display: block;
+    }
+
+    #nav-brand {
+        display: none;
     }
 
     .nav-links {
@@ -130,21 +128,18 @@ h1 {
 
     .nav-links a.nav-icon {
         display: inline-block;
-
-    }
-
-    .responsive {
-        display: block;
-    }
-
-    .responsive a {
-        display: block;
-        margin-top: 5px; 
     }
 
 
+    .responsive a.nav-icon {
+        float: right;
+    }
 
-
+    .responsive a:not(.nav-icon) {
+        display: inline-block;
+        margin-right: 0;
+        text-align: center;
+    }
 }
 
 
