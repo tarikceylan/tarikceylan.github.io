@@ -1,8 +1,8 @@
 function burgerNav () {
-    var burgerNav = document.getElementById("burger-nav");
+    const burgerNav = document.getElementById("burger-nav");
 
     if (burgerNav.className === "nav-links"){
-        burgerNav.className += " responsive";
+        burgerNav.className += " responsive"; // don't remove the sapce.
 
     }
     else {

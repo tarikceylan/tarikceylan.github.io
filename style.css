@@ -33,6 +33,11 @@ h1 {
     margin-left: 25px;
 }
 
+.nav-header a{
+    text-decoration: none;
+    color: white;
+}
+
 .nav-links {
     display: inline-block;
     margin-right: 25px;
@@ -125,7 +130,7 @@ h1 {
 
 
 .project-card {
-    width: 80%;
+    width: 95%;
     margin: 5px;
     padding: 3px;
     text-align: center;
@@ -134,8 +139,7 @@ h1 {
 }
 
 .project-card:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
+    transform: scale(1.05);
 }
 
 .project-card img {
@@ -172,6 +176,21 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
+    #work-content {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(auto, 1fr));
+    grid-gap: 10%;
+    justify-items: center;
+    margin: auto;
+    }
+
+    #work {
+    margin: 0;
+    color: white;
+    background: linear-gradient(180deg, rgb(140, 0, 0) 0%, rgb(150, 0, 0) 100%);
+    padding: 50px;
+    text-align: center;
+    }
 
     .logo {
         width: 150px;
@@ -210,11 +229,21 @@ h1 {
 }
 
 @media screen and (max-width: 450px) {
-
     .logo {
         width: 100px;
     }
 
+}
+
+@media screen and (max-width: 350px) {
+    .nav-header {
+        font-size: 0.7rem;
+    }
+    .nav-links {
+        text-decoration: none;
+        display: inline-block;
+        font-size: 0.7rem;
+    }
 }
 
 
