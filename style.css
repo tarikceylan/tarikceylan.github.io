@@ -162,6 +162,37 @@ h1 {
     display: inline-block;
 }
 
+#contact {
+    background: linear-gradient(180deg, rgb(248, 248, 248) 0%, rgb(199, 199, 199) 100%);
+    text-align: center;
+    padding: 150px 0;
+}
+
+#contact-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: inline-block;
+    padding: 25px;
+    margin: 0 10px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    transition: all 0.3s;
+    color: black;
+}
+
+.contact-info a:hover {
+    text-decoration: none;
+    color: rgb(150, 0, 0);
+}
+
+
+
+
 
 
 
